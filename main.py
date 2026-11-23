@@ -32,13 +32,13 @@ def main():
     cpu_list = sorted(cpu_list, key = lambda process: process[2], reverse= True) 
 
 
-    print("Memory Usage (Sorted DESCENDING)")
+    print(" ----- Memory Usage (Sorted DESCENDING) ----- ")
     for entry in mem_list[:10]:
         print(f"PID: {entry[0]} | Name: {entry[1]} | Percent Memory Usage: {entry[2]}%")
 
     print("\n")
 
-    print("CPU Usage (Sorted DESCENDING)")
+    print(" ----- CPU Usage (Sorted DESCENDING) ----- ")
     for entry in cpu_list[:10]:
         print(f"PID: {entry[0]} | Name: {entry[1]} | Percent CPU Usage: {entry[2]}%")
  
