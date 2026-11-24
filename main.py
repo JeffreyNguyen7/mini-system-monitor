@@ -1,6 +1,9 @@
 import psutil
 import time
 
+
+## Things to work on, make sure that we fix the error handling for both inputs, also figure out how to make the repromted data retrival not just use the same info.
+## Also work on making a better terminal usage than can swtich to GUI. tuesday
 def main():
     print("Welcome to task manager")
     mem_cpu_list = []
@@ -32,7 +35,7 @@ def main():
                 mem_cpu_list = sorted(mem_cpu_list, key = lambda process: process[2], reverse= True) 
                 print(" -----  Usage (Sorted Memory usage, DESCENDING) ----- ")
                 for entry in mem_cpu_list[:10]:
-                    print(f"PID: {entry[0]:<7} \t | Name: {entry[1]:<25.22} | Percent Memory Usage: {entry[2]:>5.1f}% \t | Percent CPU Usage: {entry[2]:>5.1f}%")
+                    print(f"PID: {entry[0]:<7} \t | Name: {entry[1]:<25.22} | Percent Memory Usage: {entry[2]:>5.1f}% \t | Percent CPU Usage: {entry[3]:>5.1f}%")
 
             elif part_query_selection[0].lower().strip() == "c":
                 mem_cpu_list = sorted(mem_cpu_list, key = lambda process: process[3], reverse= True) 
