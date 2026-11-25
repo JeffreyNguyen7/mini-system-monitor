@@ -2,8 +2,8 @@ import psutil
 import time
 
 
-## Things to work on, make sure that we fix the error handling for both inputs, also figure out how to make the repromted data retrival not just use the same info.
-## Also work on making a better terminal usage than can swtich to GUI. tuesday
+## Ensure intializtion of lists is working, also improve the error handling? and improve the ui
+
 def main():
 
     print("Welcome to task manager")
